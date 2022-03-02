@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SharedPreferenceEjercicio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingresa_un_n_mero_entero">Ingresa un número entero</string>
+    <string name="ingresa_un_n_mero_decimal">Ingresa un número decimal</string>
+    <string name="ingresa_un_texto">Ingresa un texto</string>
+    <string name="almacenado">Almacenado</string>
+    <string name="seleccionado">Seleccionado</string>
+    <string name="borrar">Borrar</string>
+    <string name="guardar">Guardar</string>
+</resources>

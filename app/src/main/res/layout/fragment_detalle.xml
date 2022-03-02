@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetalleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/ptNumeroDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/ingresa_un_n_mero_decimal"
+            android:inputType="number|numberDecimal"
+            app:layout_constraintTop_toBottomOf="@+id/switchSeleccionado"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/tvAlmacenadoTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/almacenado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptTexto" />
+
+        <EditText
+            android:id="@+id/ptTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/ingresa_un_texto"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlmacenadoNumEntero"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/ptNumeroEntero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:ems="10"
+            android:hint="@string/ingresa_un_n_mero_entero"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="38dp" />
+
+        <TextView
+            android:id="@+id/tvAlmacenadoNumEntero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/almacenado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptNumeroEntero" />
+
+        <Switch
+            android:id="@+id/switchSeleccionado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/seleccionado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlmacenadoTexto"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/tvAlmacenadoNumDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/almacenado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptNumeroDecimal" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/borrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.208"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAlmacenadoNumDecimal" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            app:layout_constraintBottom_toBottomOf="@+id/btnBorrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnBorrar"
+            app:layout_constraintTop_toTopOf="@+id/btnBorrar" />
+
+        <TextView
+            android:id="@+id/valorNumeroEntero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAlmacenadoNumEntero"
+            app:layout_constraintStart_toEndOf="@+id/tvAlmacenadoNumEntero"
+            app:layout_constraintTop_toTopOf="@+id/tvAlmacenadoNumEntero"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/valorTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAlmacenadoTexto"
+            app:layout_constraintStart_toEndOf="@+id/tvAlmacenadoTexto"
+            app:layout_constraintTop_toTopOf="@+id/tvAlmacenadoTexto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/valorNumeroDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAlmacenadoNumDecimal"
+            app:layout_constraintStart_toEndOf="@+id/tvAlmacenadoNumDecimal"
+            app:layout_constraintTop_toTopOf="@+id/tvAlmacenadoNumDecimal"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
